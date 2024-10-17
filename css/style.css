@@ -1,0 +1,387 @@
+/* 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Libre Baskerville", serif;
+  --bg-primary: #dce0e6;
+  --bg-secondary: #2e3b4e;
+  --font-color-primary: #f0f4fa;
+  --font-color-secondary: #eaff2d;
+  --backup-color: #ff9735;
+}
+
+body {
+  background-color: var(--bg-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url(../assets/image/valley.jpg);
+  background-position: center;
+  width: 1920px;
+  height: 1080px; /* 1080 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  gap: 50px;
+}
+
+header img {
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+}
+
+header h1 {
+  color: var(--font-color-secondary);
+  font-size: 150px;
+}
+
+header h2 {
+  color: var(--font-color-primary);
+}
+
+header i {
+  font-size: 150px;
+  color: var(--font-color-secondary);
+}
+
+/* start main */
+/* --------------------------------------------------- begin intro section */
+.intro {
+  background-image: url(../assets/image/winter.jpg);
+  background-position: center;
+  width: 1920px;
+  height: 850px; /* 1080 */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro .left {
+  width: 540px;
+  color: var(--font-color-secondary);
+  font-size: 68px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro .right {
+  width: 540px;
+  height: 600px;
+  color: var(--font-color-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.intro .right p {
+  font-size: 18px;
+}
+
+.read-more {
+  background: var(--font-color-secondary);
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0px;
+  transition: background 0.3 ease;
+}
+
+.read-more:hover {
+  background: var(--backup-color);
+  color: var(--bg-secondary);
+}
+
+.bx-chevron-down {
+  color: var(--font-color-secondary);
+  transition: color 0.3 ease;
+  cursor: pointer;
+}
+
+.bx-chevron-down:hover {
+  color: var(--backup-color);
+}
+/* ---------------------------------------------- start activities section */
+.activites {
+  background-image: url(../assets/image/barrow2.jpg);
+  background-position: center;
+  width: 1920px;
+  height: 1080px; /* 1080 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.activites .image-tiles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  height: 600px;
+  width: 1800px;
+}
+
+.activites .image-tiles div {
+  height: 636px;
+  width: 450px;
+  background: var(--bg-secondary);
+  color: var(--font-color-primary);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  font-size: 24px;
+  color: var(--font-color-primary);
+}
+
+.activites .image-tiles .tile1{
+  background-image: url(../assets/image/cropped/barrow.png);
+}
+
+.activites .image-tiles .tile2{
+  background-image: url(../assets/image/cropped/dwarvenruin.png);
+}
+
+.activites .image-tiles .tile3{
+  background-image: url(../assets/image/cropped/riften.png);
+}
+
+.activites .image-tiles div i{
+  color: var(--font-color-secondary);
+  font-size: 100px;
+  margin-top: -10px;
+  margin-left: -20px;
+  transition: color 0.3 ease;
+}
+.activites .image-tiles div i:hover {
+  color: var(--backup-color);
+}
+
+
+/* ---------------------------------------------- start recommend section */
+.recommendations {
+  background-image: url(../assets/image/solitude.jpg);
+  background-position: center;
+  width: 1920px;
+  height: 1080px; /* 1080 */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ---------------------------------------------- begin stats section */
+.stats {
+  background-image: url(../assets/image/mountains.jpg);
+  background-position: center;
+  width: 1920px;
+  height: 800px; /* 1080 */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 150px;
+}
+
+.stats .stat-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  background: var(--bg-secondary);
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  color: var(--font-color-primary);
+}
+
+.stats .stat-tile h2 {
+  font-size: 54px;
+}
+
+.stats .stat-tile p {
+  font-size: 18px;
+}
+
+/* ---------------------------------------------- begin testimony section */
+.testimony {
+  background-image: url(../assets/image/valley.jpg);
+  background-position: center;
+  width: 1920px;
+  height: 1080px; /* 1080 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.testimony img {
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+}
+
+.testimony p {
+  width: 800px;
+  font-size: 20px;
+  text-align: center;
+  color: var(--font-color-primary);
+}
+
+.testimony h2 {
+  color: var(--font-color-primary);
+  font-size: 36px;
+}
+
+.testimony i {
+  color: var(--font-color-secondary);
+  font-size: 150px;
+}
+
+/* ------------------------------------------------ begin gallery section */
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1920px;
+  height: 678px;
+}
+
+.gallery .gallery-tile {
+  width: 480px;
+  height: 678px;
+}
+
+.gallery .gallery-tile img {
+  width: 480px;
+  height: 678px;
+}
+
+/* ----------------------------------------------- begin contact us section */
+.contact-us {
+  background-image: url(../assets/image/aurora.jpg);
+  background-position: center;
+  width: 1920px;
+  height: 800px; /* 1080 */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-us .left {
+  width: 540px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.contact-us .left h2 {
+  color: var(--font-color-secondary);
+  font-size: 86px;
+  font-weight: 600;
+}
+
+.contact-us .left ul {
+  list-style: none;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--font-color-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.contact-us .left .socials {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: -50px;
+  width: 400px;
+}
+
+.contact-us .left .socials i {
+  color: var(--font-color-secondary);
+  font-size: 36px;
+}
+
+.contact-us .right form {
+  width: 540px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.contact-us .right form input {
+  background-color: transparent;
+  border: 2px solid white;
+  color: var(--font-color-primary);
+  font-size: 18px;
+  height: 60px;
+  padding: 10px;
+}
+
+.contact-us .right .message-input {
+  height: 300px;
+  padding: 10px;
+  resize: none;
+  background-color: transparent;
+  border: 2px solid white;
+  color: var(--font-color-primary);
+  font-size: 18px;
+}
+
+.contact-us .right button {
+  background: var(--font-color-secondary);
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0px;
+  transition: background 0.3 ease;
+}
+
+.contact-us .right button:hover {
+  background: var(--bg-primary);
+  color: var(--bg-secondary);
+}
