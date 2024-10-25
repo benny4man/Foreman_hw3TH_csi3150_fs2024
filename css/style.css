@@ -168,7 +168,7 @@ header i {
   color: var(--font-color-primary);
 }
 
-.activites .image-tiles  div  .tile-mask{
+.tile-mask{
   height: 636px;
   width: 450px;
   background: var(--bg-secondary);
